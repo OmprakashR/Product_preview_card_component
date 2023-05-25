@@ -1,0 +1,133 @@
+/*---------------- css style for Product card Componet--------------------*/
+
+/*--Root var*/
+:root {
+    /* ### Primary */
+
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /* 
+### Neutral */
+
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* body and reset css*/
+
+*, *::after,*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hilight {
+
+
+    font-family: 'Fraunces', serif;
+
+}
+
+.product_card {
+    overflow: hidden;
+    background-color: var(--White);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.product_img {
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-image: url(/images/image-product-desktop.jpg);
+}
+
+.product_info {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.preiew {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--Dark_grayish_blue);
+}
+
+h1.hilight {
+    font-size: 35px;
+    line-height: 1em;
+    color: var(--Very_dark_blue);
+}
+
+.product_discription {
+    font-size: 15px;
+    color: var(--Dark_grayish_blue);
+}
+
+.Product_price {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-price {
+    font-size: 30px;
+    color: var(--Dark_cyan);
+
+}
+
+.discounted {
+    font-size: 14px;
+    color: var(--Dark_grayish_blue);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--White);
+    font-weight: 700;
+    background-color: var(--Dark_cyan);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .product_card {
+
+        flex-direction: column;
+
+    }
+
+    .product_info {
+        gap: 20px;
+    }
+
+    .product_img {
+        height: 200px;
+        background-image: url(/images/image-product-mobile.jpg);
+    }
+}
