@@ -52,7 +52,7 @@ body {
     height: 500px;
     width: 300px;
     background-size: cover;
-    background-image: url(/images/image-product-desktop.jpg);
+    background-image: url('./images/image-product-desktop.jpg');
 }
 
 .product_info {
@@ -132,6 +132,6 @@ button:hover, button:focus, button:active{
 
     .product_img {
         height: 200px;
-        background-image: url(/images/image-product-mobile.jpg);
+        background-image: url('./images/image-product-mobile.jpg');
     }
 }
